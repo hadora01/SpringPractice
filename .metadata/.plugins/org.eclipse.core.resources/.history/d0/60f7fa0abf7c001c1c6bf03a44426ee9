@@ -1,0 +1,19 @@
+package kr.ac.gachon.cse;
+
+
+
+public class PetOwner {
+
+	private AnimalType  animal;
+
+	public PetOwner() {}
+	public PetOwner(AnimalType name) {
+		this.animal= name;
+	}
+	
+	
+	public void play() {
+		animal.sound();
+	}
+
+}

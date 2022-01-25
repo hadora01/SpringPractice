@@ -1,0 +1,16 @@
+package kr.ac.gachon.cse.csemall;
+
+import javax.sql.DataSource;
+
+import org.springframework.jdbc.core.JdbcTemplate;
+
+public class OfferDao {
+	 private JdbcTemplate jdbcTemplate;
+
+	    public void setDataSource(DataSource dataSource) {
+	        this.jdbcTemplate = new JdbcTemplate(dataSource);
+	        //jdbc template를 생성하여, 사용
+	    }
+	    
+//bean 으로 등록함
+}

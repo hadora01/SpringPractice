@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aop-reference-model>
+<aop-project name="helloDI"/>
+<aop-project name="helloDB"/>
+<aop-project name="helloAOP">
+<aspect-definition advice-class-name="kr.ac.gachon.cse.Logger" advice-method-name="aboutToSound" advice-type="BEFORE" aspect-end-line-number="25" aspect-name="id_logger" aspect-start-line-number="24" factory-id="org.springframework.ide.eclipse.aop.core.annotationAspectDefinitionElementFactory" file="/helloAOP/src/main/resources/animal.xml" pointcut-expression="selectSound()" proxy-target-class="false">
+<aop-reference advice-type="BEFORE" bean="1:BeansModel|2:helloAOP|3:src/main/resources/animal.xml|7:beans:8|8:id_cat:11" bean-file="/helloAOP/src/main/resources/animal.xml" bean-start-line="11" factory-id="org.springframework.ide.eclipse.aop.core.aopReferenceElementFactory" file="/helloAOP/src/main/resources/animal.xml" source="=helloAOP/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;kr.ac.gachon.cse{Logger.java[Logger~aboutToSound" source-start-line="16" target="=helloAOP/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;kr.ac.gachon.cse{Cat.java[Cat~sound" target-start-line="14"/>
+<aop-reference advice-type="BEFORE" bean="1:BeansModel|2:helloAOP|3:src/main/resources/animal.xml|7:beans:8|8:id_dog:16" bean-file="/helloAOP/src/main/resources/animal.xml" bean-start-line="16" factory-id="org.springframework.ide.eclipse.aop.core.aopReferenceElementFactory" file="/helloAOP/src/main/resources/animal.xml" source="=helloAOP/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;kr.ac.gachon.cse{Logger.java[Logger~aboutToSound" source-start-line="16" target="=helloAOP/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;kr.ac.gachon.cse{Dog.java[Dog~sound" target-start-line="14"/>
+</aspect-definition>
+</aop-project>
+</aop-reference-model>

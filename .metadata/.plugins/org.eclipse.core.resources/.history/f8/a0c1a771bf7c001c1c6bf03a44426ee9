@@ -1,0 +1,13 @@
+package kr.ac.gachon.cse;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+public class PetOwner {
+	@Autowired //wiring by type 
+	private AnimalType animal;
+
+	public void play() {
+		animal.sound();
+	}
+
+}

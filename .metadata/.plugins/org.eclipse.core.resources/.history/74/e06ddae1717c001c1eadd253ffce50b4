@@ -1,0 +1,24 @@
+package kr.ac.gachon.cse;
+
+public class Cat implements AnimalType {
+
+	private String myName;
+	
+	public String getMyName() {
+		return myName;
+	}
+
+	public void setMyName(String myName) {
+		this.myName = myName;
+	}
+
+
+	@Override
+	public void sound() {
+		System.out.println("Cat name=" + myName + ":" + "Meow");
+	}
+
+	
+}
+
+//ctrl+shift+o 자동임포트 
